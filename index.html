@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Login page</title>
+
+    <!--styles-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--font links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="login-section">
+    <div id="login-page">
+        <h2 id="login-title">Welcome back</h2>
+        <form id="login-form">
+            <label for="login-email">Email</label>
+            <input type="email" name="email" id="login-email" class="login-input">
+            <label for="login-password">Password</label>
+            <input type="password" name="password" id="login-password" class="login-input">
+            <p id="forgot-p">Forgot Password?</p>
+            <input type="button" value="Log In" id="login-btn">
+        </form>
+
+        <div id="or-div">
+            <hr class="hr" id="hr1"> 
+            <p id="or">OR</p> 
+            <hr class="hr" id="hr2">
+        </div>
+
+        <div id="join-div">
+            <p id="join-title">Join app with your favourite social media account: </p>
+            <div id="join-icons">
+                <div class="icon-div" onclick="googleIcon()">
+                <img src="./images/google-icon.png" alt="google icon" class="login-icon" id="google-icon">
+                </div>
+                <div class="icon-div" onclick="facebookIcon()">
+                <img src="./images/facebook-icon.png" alt="facebook icon" class="login-icon" id="facebook-icon">
+                </div>
+                <div class="icon-div" onclick="appleIcon()">
+                <img src="./images/apple-icon.png" alt="apple icon" class="login-icon" id="apple-icon">
+                </div>
+                <div class="icon-div" onclick="twitterIcon()">
+                <img src="./images/twitter-icon.png" alt="twitter icon" class="login-icon" id="twitter-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
